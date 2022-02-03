@@ -1,0 +1,6 @@
+{
+"emmet.syntaxProfiles": {
+    "javascript": "javascriptreact" 
+},
+  "emmet.triggerExpansionOnTab": true
+}

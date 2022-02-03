@@ -1,0 +1,3 @@
+dist/
+.nucleo/
+node_modules/
