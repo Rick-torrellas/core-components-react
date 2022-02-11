@@ -1,0 +1,13 @@
+Para llamar a un componente que solo tiene logica dentro de otro componente, se usa snake case example: FromLarge_Button
+
+Para llamar una variante de un componete se usa camel case example: FromLarge
+
+Para definir una clase nula, para valores por defecto que necesita un valor como backgron image por ejemplo, se usara "nulo"
+
+En caso de que quieras agregar un estado, como hover: puedes hacerlo directamente en la propiedad, ya sea que quieras crear un estado neutral primero o no. example: text-color="text-red-500 hover:text-red-800"
+
+Se puede crear un componentee "Custom", que funcione para constuir elementos rapidos y faciles, al usar los porps agrupados, por ejemplo, un props.text que agrupe todas las clases de text, otro bg para los backgrounds, etc.
+
+Se pueden crear templates y insertar el contenido por props.
+
+Para crear un orden se podria crear objetos dentro de los props, que agrupen las clases, por ejemplo, text: {text_color,text_width}, lo negativo que tiene este es que a la hora de ingresar los props, se vuelve mas complicado.

@@ -1,4 +1,4 @@
-# core-scripts
+# @core_/components-react-tailwind
 
 <img src="" alt="title" width="20%">
 
