@@ -22,5 +22,8 @@
 
     import './styles/iframe.css';
 
-  import Component0 from '../src/components/Button/Button.js';
-reactComponents['Button'] = Component0;
+  import Component0 from '../src/components/Button/index.js';
+reactComponents['Cara'] = Component0;
+
+import Component1 from '../src/components/Button/Button.js';
+reactComponents['Button'] = Component1;

@@ -72,7 +72,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-Button.html">Button</a></li></ul><h3>Classes</h3><ul><li><a href="Person.html">Person</a></li></ul><h3>Global</h3><ul><li><a href="global.html#arrey">arrey</a></li><li><a href="global.html#ejemplo">ejemplo</a></li><li><a href="global.html#funcion">funcion</a></li><li><a href="global.html#objeto">objeto</a></li><li><a href="global.html#person1">person1</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-Button.html">Button</a></li></ul><h3>Components</h3><ul><li><a href="Cara.html">Cara</a></li><li><a href="module-Button.Button.html">Button</a></li></ul></div>
                 
             </nav>
         </div>
@@ -89,91 +89,35 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>// @ts-check
+            <pre class="prettyprint source linenums"><code>export *  from './Button';
 /**
- * @file index.js is the root file for this example app
- * @author Brad Traversy
- * @see {@link https://github.com/Rick-torrellas}
+ * @component
  */
-
-/**
- * Variable de prueba
- * @type {string}
- */
-const ejemplo = "Valor";
-/**
- * Ejemplo con array
- * @type {Array&lt;string|number>}
- */
-const arrey = ['hola','como estas?',2];
-
-/**
- * Ejemplo de objeto
- * @type {{id: string, edad: string|number}}
- */
-const objeto = {
-    id: "pepe",
-    edad: 3
+ export function Cara(props) {
+const {nalga,nalgota_de_negra_africana} = props
+    return(
+        &lt;div>
+        &lt;p>SOP&lt;/p>
+        &lt;div>
+            &lt;a href="">Olis&lt;/a>
+            &lt;p>{nalga}&lt;/p>
+        &lt;/div>
+        &lt;/div>
+    )
 }
+Cara.propTypes = {
 /**
- * 
- * @param {string} id - Un id
- * @param {number} [edad] - La edad (Opcional)
- * @return {void} - No retorna nada por que no hace nada :D
+ * Una nalga.
  */
-function funcion(id,edad) {
-    
+nalga: Proptypes.string,
+/**
+ * Las ricas nalgas de una negra africada del sur.
+ */
+nalgota_de_negra_africana: Proptypes.string
 }
-
-/**
- * Una persona
- * @typedef {Object} Estudiante
- * @property {number} edad - La edad
- * @property {string} nombre - El nombre
- */
-/**
- * @type {Estudiante}
- */
-const Estudiante = {
-    edad: 23,
-    nombre: "Ramon"
-}
-
-/**
- * Class to create a person object
- */
- class Person {
-    /**
-     *
-     * @param {Object} personInfo Information about the person
-     */
-    constructor(personInfo) {
-      /**
-       * @property {string} name Persons name
-       */
-      this.name = personInfo.name;
-      /**
-       * @property {string} age Persons age
-       */
-      this.age = personInfo.age;
-    }
-  
-    /**
-     * @property {Function} greet A greeting with the name and age
-     * @returns void
-     */
-    greet() {
-      console.log(`Hello, my name is ${this.name} and I am ${this.age}`);
-    }
-  }
-
-/**
- * See {@link Person}
- */
- const person1 = new Person({
-    name: 'John Doe',
-    age: 30
-  });</code></pre>
+Cara.defaultProps = {
+    nalga: "Culo"
+}</code></pre>
         </article>
     </section>
 
